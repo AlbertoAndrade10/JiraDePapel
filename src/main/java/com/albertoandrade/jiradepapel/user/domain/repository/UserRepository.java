@@ -9,6 +9,7 @@ import com.albertoandrade.jiradepapel.user.domain.model.valueObjects.UserId;
  * user domain repository
  */
 public interface UserRepository {
+    
     void save(User user);
 
     Optional<User> findById(UserId id);
