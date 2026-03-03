@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,7 +18,7 @@ import com.albertoandrade.jiradepapel.user.application.service.UserService;
 import com.albertoandrade.jiradepapel.user.domain.model.User;
 import com.albertoandrade.jiradepapel.user.domain.model.valueObjects.UserId;
 
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
 import jakarta.validation.Valid;
 
 @RestController
@@ -52,6 +53,6 @@ public class UserController {
         return new UserResponse(
                 user.getId().getValue(),
                 user.getEmail(),
-                user.getUserRole());
+                user.getRole());
     }
 }

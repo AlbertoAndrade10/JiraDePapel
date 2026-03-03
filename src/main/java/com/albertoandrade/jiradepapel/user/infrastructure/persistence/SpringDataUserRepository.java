@@ -12,6 +12,6 @@ import org.springframework.stereotype.Repository;
 public interface SpringDataUserRepository extends JpaRepository<JpaUserEntity, Long> {
 
     Optional<JpaUserEntity> findByEmail(String email);
-    Optional<JpaUserEntity> findByUserId(UUID userId);
+    Optional<JpaUserEntity> findById(UUID id);
 
 }

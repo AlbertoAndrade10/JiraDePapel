@@ -17,13 +17,13 @@ public class User {
     private final UserId id;
     private String email;
     private String password;
-    private UserRole userRole;
+    private UserRole role;
 
     public User(UserId id, String email, String password, UserRole role) {
         this.id = Objects.requireNonNull(id, "id cannot be null");
         this.email = Objects.requireNonNull(email, "email cannot be null");
         this.password = Objects.requireNonNull(password, "password cannot be null");
-        this.userRole = Objects.requireNonNull(userRole, "role cannot be null");
+        this.role = Objects.requireNonNull(role, "role cannot be null");
     }
 
 }

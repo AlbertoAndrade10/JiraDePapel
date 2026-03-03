@@ -1,6 +1,7 @@
 package com.albertoandrade.jiradepapel.common.infrastructure.persistence;
 
 import java.time.Instant;
+import java.util.UUID;
 
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
@@ -24,8 +25,8 @@ import lombok.Setter;
 public abstract class BaseJpaEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    protected UUID id;
 
     @CreatedDate
     @Column(nullable = false, updatable = false)

@@ -24,13 +24,13 @@ public class UserRepositoryAdapter implements UserRepository {
         JpaUserEntity entity = new JpaUserEntity(
                 user.getEmail(),
                 user.getPassword(),
-                user.getUserRole().name());
+                user.getRole().name());
         jpaRepository.save(entity);
     }
 
     @Override
     public Optional<User> findById(UserId id) {
-        return jpaRepository.findByUserId(id.getValue())
+        return jpaRepository.findById(id.getValue())
                 .map(this::toDomain);
     }
 
