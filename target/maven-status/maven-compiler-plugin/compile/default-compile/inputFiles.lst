@@ -49,13 +49,17 @@ C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\security\config\SecurityConfig.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\security\model\SecurityUser.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\security\service\CustomJwtAuthenticationConverter.java
+C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\api\AuthController.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\api\dto\CreateUserRequest.java
+C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\api\dto\LoginRequest.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\api\dto\UserResponse.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\api\UserController.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\application\service\UserService.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\application\usecase\CreateUserUseCase.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\application\usecase\FindUserUseCase.java
+C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\application\usecase\LoginUseCase.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\config\UserUseCaseConfig.java
+C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\domain\exception\InvalidCredentialsException.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\domain\exception\InvalidUserDataException.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\domain\exception\UserAlreadyExistsException.java
 C:\Users\alber\Desktop\JiraDePapel\src\main\java\com\albertoandrade\jiradepapel\user\domain\exception\UserNotFoundException.java

@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.albertoandrade.jiradepapel.security.service.JwtService;
 import com.albertoandrade.jiradepapel.user.application.usecase.CreateUserUseCase;
 import com.albertoandrade.jiradepapel.user.application.usecase.FindUserUseCase;
 import com.albertoandrade.jiradepapel.user.application.usecase.LoginUseCase;
@@ -23,8 +24,10 @@ public class UserUseCaseConfig {
     @Bean
     public LoginUseCase loginUseCase(
             UserRepository userRepository,
-            PasswordEncoder passwordEncoder) {
-        return new LoginUseCase(userRepository, passwordEncoder);
+            PasswordEncoder passwordEncoder,
+            JwtService jwtService) {
+
+        return new LoginUseCase(userRepository, passwordEncoder, jwtService);
     }
 
     @Bean

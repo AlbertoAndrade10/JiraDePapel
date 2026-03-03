@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.albertoandrade.jiradepapel.user.api.dto.LoginRequest;
 import com.albertoandrade.jiradepapel.user.application.usecase.LoginUseCase;
-import com.albertoandrade.jiradepapel.user.domain.model.User;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import jakarta.validation.Valid;
@@ -22,8 +21,13 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@Valid @RequestBody LoginRequest request) {
-        User user = loginUseCase.execute(request.getEmail(), request.getPassword());
-        return ResponseEntity.ok("Login successful for user: " + user.getEmail());
+    public ResponseEntity<String> login(
+            @Valid @RequestBody LoginRequest request) {
+
+        String token = loginUseCase.execute(
+                request.getEmail(),
+                request.getPassword());
+
+        return ResponseEntity.ok(token);
     }
 }

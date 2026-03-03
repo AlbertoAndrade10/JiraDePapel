@@ -4,6 +4,7 @@ com\albertoandrade\jiradepapel\issue\application\usecase\AssignIssueUseCase.clas
 com\albertoandrade\jiradepapel\comment\api\CommentController.class
 com\albertoandrade\jiradepapel\common\infrastructure\persistence\BaseJpaEntity.class
 com\albertoandrade\jiradepapel\issue\api\IssueController.class
+com\albertoandrade\jiradepapel\user\api\AuthController.class
 com\albertoandrade\jiradepapel\issue\domain\model\Issue.class
 com\albertoandrade\jiradepapel\project\application\usecase\CreateProjectUseCase.class
 com\albertoandrade\jiradepapel\user\application\service\UserService.class
@@ -26,6 +27,8 @@ com\albertoandrade\jiradepapel\issue\infrastructure\mapper\IssuePersistenceMappe
 com\albertoandrade\jiradepapel\project\infrastructure\mapper\ProjectPersistenceMapper.class
 com\albertoandrade\jiradepapel\comment\domain\repository\CommentRepository.class
 com\albertoandrade\jiradepapel\issue\domain\repository\IssueRepository.class
+com\albertoandrade\jiradepapel\user\application\usecase\LoginUseCase.class
+com\albertoandrade\jiradepapel\user\api\dto\LoginRequest.class
 com\albertoandrade\jiradepapel\security\service\CustomJwtAuthenticationConverter.class
 com\albertoandrade\jiradepapel\user\domain\model\UserRole.class
 com\albertoandrade\jiradepapel\project\api\dto\CreateProjectRequest.class
@@ -52,6 +55,7 @@ com\albertoandrade\jiradepapel\issue\application\usecase\CreateIssueUseCase.clas
 com\albertoandrade\jiradepapel\issue\domain\model\IssuePriority.class
 com\albertoandrade\jiradepapel\user\api\dto\UserResponse.class
 com\albertoandrade\jiradepapel\user\domain\exception\UserAlreadyExistsException.class
+com\albertoandrade\jiradepapel\user\domain\exception\InvalidCredentialsException.class
 com\albertoandrade\jiradepapel\issue\api\dto\UpdateIssueStatusRequest.class
 com\albertoandrade\jiradepapel\security\model\SecurityUser.class
 com\albertoandrade\jiradepapel\issue\application\service\IssueService.class
